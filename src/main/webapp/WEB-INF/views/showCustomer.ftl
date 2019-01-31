@@ -2,25 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Start</title>
+    <title>Customer info</title>
 </head>
 <body>
-    <h1>Customers list</h1>
+    <h1>Customer info</h1>
     <table>
         <tr>
-            <th>Id</th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Age</th>
+            <td>Id</td>
+            <td>${customer.id}</td>
         </tr>
-    <#list customers as customer>
         <tr>
-            <td><a href="/customer/${customer.id}">${customer.id}</a></td>
+            <td>Name</td>
             <td>${customer.name}</td>
+        </tr>
+        <tr>
+            <td>email</td>
             <td>${customer.email}</td>
+        </tr>
+        <tr>
+            <td>Age</td>
             <td>${customer.age}</td>
         </tr>
-    </#list>
     </table>
+<br>
+<a href="/customers">return</a>
 </body>
 </html>

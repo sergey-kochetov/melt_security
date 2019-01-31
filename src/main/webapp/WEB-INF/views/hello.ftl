@@ -6,6 +6,6 @@
 </head>
 <body>
     <h1>HELLO!!! first</h1>
-<a href="/customersList">customers list</a>
+<a href="/customers">customers list</a>
 </body>
 </html>
